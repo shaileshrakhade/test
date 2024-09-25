@@ -17,7 +17,7 @@ public class StreamApi {
                 new Student(9, "Sonu", "Shankar", 27, "Female", "Computer Engineering", 2018, "Karnataka", 7),
                 new Student(10, "Shubham", "Pandey", 26, "Male", "Instrumentation Engineering", 2017, "Mumbai", 98));
 //            1- Find list of students whose first name starts with alphabet A
-        List<Student> lstStuName = list.stream().filter(student -> student.getFirstName().startsWith("A")).collect(Collectors.toList());
+        List<Student> lstStuName = list.stream().filter(student -> student.getFirstName().startsWith("A")).toList();
         System.out.println("Question 1:: " + lstStuName);
 
 //            2- Group The Student By Department Names
@@ -76,7 +76,7 @@ public class StreamApi {
 
 //            14- Find the list of students and sort them by their rank
         System.out.println("Question 14:: " +
-                list.stream().sorted(Comparator.comparing(Student::getRank)).collect(Collectors.toList()));
+                list.stream().sorted(Comparator.comparing(Student::getRank)).toList());
 
 //            15- Find the student who has second rank
         System.out.println("Question 15:: " +
