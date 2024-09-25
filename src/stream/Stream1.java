@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-public class Practice {
+public class Stream1 {
     public static void main(String[] args) {
         List<String> list=new ArrayList<>();
         list.add("i");
