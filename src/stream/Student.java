@@ -28,6 +28,10 @@ public class Student {
     /** The rank. */
     private int rank;
 
+    public Student() {
+
+    }
+
     public void setId(int id) {
         this.id = id;
     }

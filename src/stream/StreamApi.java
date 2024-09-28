@@ -82,5 +82,7 @@ public class StreamApi {
         System.out.println("Question 15:: " +
                 list.stream().sorted(Comparator.comparing(Student::getRank)).skip(1).findFirst());
 
+        Student student = list.stream().sorted(Comparator.comparing(Student::getRank)).skip(1).findFirst().orElse(new Student());
+        System.out.println(student);
     }
 }
