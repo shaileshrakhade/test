@@ -13,7 +13,7 @@ public class CountIsInArrayList {
         int count = 0;
         for (String a : cars) {
             char[] charArray = a.toCharArray();
-            char char1 = 0;
+            char char1 = ' ';
             for (int i = 0; i < charArray.length; i++) {
                 char1 = charArray[i];
                 if (char1 == 'i') {

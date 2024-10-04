@@ -9,20 +9,17 @@ public class DuplicateCharInString {
         }
     }
 
-    static char isDuplicate(String s, int i, char c) {
+    static void isDuplicate(String s, int i, char c) {
         i++;
         if (i < s.length()) {
-
 //            System.out.println(c + "::" + s.charAt(i));
             if (c != s.charAt(i))
                 isDuplicate(s, i, c);
             if (c == s.charAt(i)) {
                 System.out.println(c);
-                return c;
             }
 
 
         }
-        return ' ';
     }
 }
